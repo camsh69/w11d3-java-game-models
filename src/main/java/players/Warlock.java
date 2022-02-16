@@ -1,4 +1,4 @@
 package players;
 
-public class Warlock extends Spellcaster{
-}
+//public class Warlock extends Spellcaster{
+//}

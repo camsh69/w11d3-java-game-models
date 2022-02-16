@@ -1,4 +1,4 @@
 package players;
 
-public class Wizard extends Spellcaster{
-}
+//public class Wizard extends Spellcaster{
+//}

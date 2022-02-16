@@ -1,5 +1,4 @@
 package players;
 
-public class Barbarian extends Warrior {
-
-}
+//public class Barbarian extends Warrior {
+//}

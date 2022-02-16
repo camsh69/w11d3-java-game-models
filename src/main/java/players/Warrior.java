@@ -23,7 +23,9 @@ public abstract class Warrior extends Player {
     }
 
     public void addWeapon(WeaponType weapon) {
-        this.weapons.add(weapon);
+        if (!weapons.contains(weapon)) {
+            this.weapons.add(weapon);
+        }
     }
 
     public void chooseWeapon(WeaponType newWeapon) {

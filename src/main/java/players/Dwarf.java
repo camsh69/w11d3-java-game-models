@@ -1,4 +1,4 @@
 package players;
 
-public class Dwarf extends Warrior {
-}
+//public class Dwarf extends Warrior {
+//}
