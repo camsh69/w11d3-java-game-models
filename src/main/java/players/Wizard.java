@@ -7,11 +7,13 @@ public class Wizard extends Spellcaster{
 
     @Override
     SpellType setStartingSpell() {
+        addSpell(SpellType.LIGHTNING);
         return SpellType.LIGHTNING;
     }
 
     @Override
     CreatureType setStartingCreature() {
+        addCreature(CreatureType.GOLEM);
         return CreatureType.GOLEM;
     }
 }
