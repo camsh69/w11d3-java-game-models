@@ -39,4 +39,17 @@ public class WizardTest {
         assertEquals(2, wizard.getCreatures().size());
         assertTrue(wizard.getCreatures().contains(CreatureType.IMP));
     }
+
+    @Test
+    public void canChooseSpellAndCreature() {
+        CreatureType imp = CreatureType.IMP;
+        SpellType cyclone = SpellType.CYCLONE;
+        wizard.addCreature(imp);
+        wizard.addSpell(cyclone);
+        assertEquals(CreatureType.GOLEM, wizard.getCreature());
+        assertEquals(SpellType.LIGHTNING, wizard.getSpell());
+        wizard.chooseSpellAndCreature(imp, cyclone);
+        assertEquals(imp, wizard.getCreature());
+        assertEquals(cyclone, wizard.getSpell());
+    }
 }
