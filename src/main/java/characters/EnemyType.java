@@ -11,7 +11,7 @@ public enum EnemyType {
         this.healthPoints = healthPoints;
     }
 
-    public int getLife() {
+    public int getHealthPoints() {
         return this.healthPoints;
     }
 }
