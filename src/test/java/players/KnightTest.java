@@ -41,5 +41,12 @@ public class KnightTest {
         assertTrue(knight.getWeapons().contains(WeaponType.AXE));
     }
 
-
+    @Test
+    public void canChooseWeapon() {
+        WeaponType axe = WeaponType.AXE;
+        knight.addWeapon(axe);
+        assertEquals(WeaponType.SWORD, knight.getWeapon());
+        knight.chooseWeapon(axe);
+        assertEquals(axe, knight.getWeapon());
+    }
 }
